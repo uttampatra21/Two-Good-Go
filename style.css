@@ -147,15 +147,15 @@ PAGE 2 Start
 .shop small {
   color: black;
 }
-.shop small:nth-child(2) {
+.shop small:nth-child(1) {
   font-weight: 500;
   font-size: 14px;
 }
-.shop small:nth-child(3) {
+.shop small:nth-child(4) {
   font-weight: bold;
   font-size: 13px;
 }
-.shop i:nth-child(1) {
+.bx-radio-circle {
   background-color: #000;
   border-radius: 50px;
   font-size: 9px;
@@ -164,6 +164,8 @@ PAGE 2 Start
   position: relative;
 }
 .shop-scroll {
+  opacity: 0;
+  scale: 0;
   position: absolute;
   height: 100px;
   width: 100px;
