@@ -1,3 +1,8 @@
+const scroll = new LocomotiveScroll({
+  el: document.querySelector("#main"),
+  smooth: true,
+});
+
 const videoAnimition = () => {
   const videoCont = document.getElementById("book");
   const play = document.getElementById("play");

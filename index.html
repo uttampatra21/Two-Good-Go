@@ -4,18 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Too Good Go</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
     <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <main>
+    <main id="main">
       <!-- 
         -----------------------------------
         PAGE 1 START
         -----------------------------------
        -->
       <div id="page1">
-        <h1>CHANGE</h1>
-        <h1>THE COURSE</h1>
+        <div class="title">
+          <h1>CHANGE</h1>
+          <div class="child-title">
+            <h1>THE</h1>
+            <h1>COURSE</h1>
+          </div>
+        </div>
         <div id="book">
           <div id="play">PLAy</div>
           <video
@@ -43,10 +57,49 @@
           <p>buy good</p>
         </div>
         <hr />
-        <div class="element">
-          <div id="page-elem" class="elem"></div>
-          <div id="page-elem" class="elem"></div>
-          <div id="page-elem" class="elem"></div>
+        <div id="element">
+          <div data-scroll data-scroll-speed="1" id="page-elem" class="elem">
+            <div data-scroll data-scroll-speed="2" class="shop">
+              <div class="shop-scroll">
+                <img
+                  src="https://cdn.sanity.io/images/w8f1ak3c/production/f445a3d15e318fd217579e88ec2c6d0140246403-3574x4467.jpg/DSC0078_Dexter%20Kim.jpg?rect=448,0,2679,4467&w=640&h=1067&fit=min&auto=format"
+                  alt=""
+                />
+              </div>
+              <i class="bx bx-radio-circle"></i>
+              <small>SHOP</small>
+              <small>NEW GOODIES</small>
+              <i class="bx bx-chevron-right"></i>
+            </div>
+          </div>
+          <div data-scroll data-scroll-speed="1" id="page-elem" class="elem">
+            <div data-scroll data-scroll-speed="2" class="shop">
+              <div class="shop-scroll">
+                <img
+                  src="https://cdn.sanity.io/images/w8f1ak3c/production/f445a3d15e318fd217579e88ec2c6d0140246403-3574x4467.jpg/DSC0078_Dexter%20Kim.jpg?rect=448,0,2679,4467&w=640&h=1067&fit=min&auto=format"
+                  alt=""
+                />
+              </div>
+              <i class="bx bx-radio-circle"></i>
+              <small>SHOP</small>
+              <small>PANTRY</small>
+              <i class="bx bx-chevron-right"></i>
+            </div>
+          </div>
+          <div data-scroll data-scroll-speed="1" id="page-elem" class="elem">
+            <div data-scroll data-scroll-speed="2" class="shop">
+              <div class="shop-scroll">
+                <img
+                  src="https://cdn.sanity.io/images/w8f1ak3c/production/f445a3d15e318fd217579e88ec2c6d0140246403-3574x4467.jpg/DSC0078_Dexter%20Kim.jpg?rect=448,0,2679,4467&w=640&h=1067&fit=min&auto=format"
+                  alt=""
+                />
+              </div>
+              <i class="bx bx-radio-circle"></i>
+              <small>SHOP</small>
+              <small>BATH</small>
+              <i class="bx bx-chevron-right"></i>
+            </div>
+          </div>
         </div>
       </div>
       <!-- 
@@ -54,12 +107,20 @@
         PAGE 2 END
         -----------------------------------
        -->
+      <!-- -----------------------------------
+        PAGE 3 Start
+        ------------------------------------->
+      <div id="page3"></div>
+      <!-- -----------------------------------
+        PAGE 3 END
+        ------------------------------------->
     </main>
     <!-- 
         -----------------------------------
          SCRIPTS
         -----------------------------------
        -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
       integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
