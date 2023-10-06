@@ -202,6 +202,12 @@ MEDIA QUERIES
 
 */
 @media only screen and (max-width: 600px) {
+  .play {
+    display: none;
+  }
+  .shop-scroll {
+    display: none;
+  }
   #page2 {
     height: 100%;
   }
