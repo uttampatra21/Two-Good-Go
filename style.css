@@ -12,10 +12,65 @@ body {
   height: 100%;
   scroll-behavior: smooth;
 }
+body {
+  background-color: #f7f7f7;
+}
 *::-webkit-scrollbar {
   display: none;
 }
+#cursor {
+  width: 180px;
+  height: 180px;
+  background-color: rgb(210, 39, 182);
+  position: fixed;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+}
 main {
+}
+
+/* 
+---------------NAV---------------
+*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+nav .nav-menu,
+.nav-item,
+.navigation-icon {
+  padding: 10px 0;
+  display: flex;
+  gap: 3rem;
+  text-transform: uppercase;
+  font-family: "futura";
+  font-size: 0.8rem;
+}
+.navigation-icon {
+  padding: 8px 20px;
+  background-color: #f7f7f7;
+  border-radius: 30px;
+}
+nav a {
+  color: #000;
+}
+nav i {
+  font-size: 1.2rem;
+}
+#logo {
+  /* background-color: red; */
+  height: 84px;
+  display: flex;
+  /* flex-direction: column; */
+}
+.svg {
+  height: 100px;
+  width: 100px;
 }
 /*
 ------------------------------------------
@@ -163,7 +218,9 @@ PAGE 2 Start
 .shop {
   position: relative;
 }
-.shop-scroll {
+.shop-scroll,
+.shop-scroll2,
+.shop-scroll3 {
   opacity: 0;
   scale: 0;
   position: absolute;
@@ -171,7 +228,9 @@ PAGE 2 Start
   width: 100px;
   border-radius: 50%;
 }
-.shop-scroll img {
+.shop-scroll img,
+.shop-scroll2 img,
+.shop-scroll3 img {
   height: 100px;
   width: 100px;
   object-fit: cover;
@@ -188,12 +247,63 @@ PAGE 3 Start
 ------------------------------------------
 */
 #page3 {
+  padding: 5vw 10px;
+  height: 130vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#child {
+  height: 55%;
+  width: 38%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.detls {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.detls h4,
+.detls h5 {
+  font-weight: 300;
+}
+.img {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+.img img {
+  width: 100%;
+  height: 100%;
+}
+
+/*
+------------------------------------------
+PAGE 3 End
+------------------------------------------
+*/
+/*
+------------------------------------------
+PAGE 4 Start
+------------------------------------------
+*/
+#page4 {
   height: 100vh;
   width: 100%;
 }
 /*
 ------------------------------------------
-PAGE 2 End
+PAGE 3 End
 ------------------------------------------
 */
 
@@ -204,11 +314,28 @@ MEDIA QUERIES
 
 */
 @media only screen and (max-width: 600px) {
+  .nav-item {
+    display: none;
+  }
+  nav {
+    padding: 1rem 0.5rem;
+  }
+  nav .nav-menu {
+    padding: 0;
+  }
+  .svg {
+    height: 60px;
+    width: 60px;
+  }
   .play {
     display: none;
   }
   .shop-scroll {
     display: none;
+  }
+  #page1 {
+    display: grid;
+    grid-template-columns: repeat(30% 70%);
   }
   #page2 {
     height: 100%;
@@ -223,5 +350,8 @@ MEDIA QUERIES
   }
   #element .elem {
     height: 70vh;
+  }
+  #child {
+    width: 100%;
   }
 }
